@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct InkSpotApp: App {
+    @StateObject var tattooVM = TattooViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListView()
+                .environmentObject(tattooVM)
         }
     }
 }

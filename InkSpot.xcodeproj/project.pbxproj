@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		DF07222B2A2D2F0400E31060 /* InkSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF07222A2A2D2F0400E31060 /* InkSpotApp.swift */; };
-		DF07222D2A2D2F0400E31060 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF07222C2A2D2F0400E31060 /* ContentView.swift */; };
+		DF07222D2A2D2F0400E31060 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF07222C2A2D2F0400E31060 /* ListView.swift */; };
 		DF07222F2A2D2F0500E31060 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF07222E2A2D2F0500E31060 /* Assets.xcassets */; };
 		DF0722322A2D2F0500E31060 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0722312A2D2F0500E31060 /* Preview Assets.xcassets */; };
+		DF07223A2A2D755D00E31060 /* Tattoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0722392A2D755D00E31060 /* Tattoo.swift */; };
+		DF07223C2A2D785800E31060 /* TattooViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF07223B2A2D785800E31060 /* TattooViewModel.swift */; };
+		DF07223E2A2D7AA200E31060 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF07223D2A2D7AA200E31060 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DF0722272A2D2F0400E31060 /* InkSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InkSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF07222A2A2D2F0400E31060 /* InkSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InkSpotApp.swift; sourceTree = "<group>"; };
-		DF07222C2A2D2F0400E31060 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF07222C2A2D2F0400E31060 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		DF07222E2A2D2F0500E31060 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF0722312A2D2F0500E31060 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF0722382A2D2F7400E31060 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DF0722392A2D755D00E31060 /* Tattoo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tattoo.swift; sourceTree = "<group>"; };
+		DF07223B2A2D785800E31060 /* TattooViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooViewModel.swift; sourceTree = "<group>"; };
+		DF07223D2A2D7AA200E31060 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		DF0722292A2D2F0400E31060 /* InkSpot */ = {
 			isa = PBXGroup;
 			children = (
+				DF0722382A2D2F7400E31060 /* Info.plist */,
 				DF07222A2A2D2F0400E31060 /* InkSpotApp.swift */,
-				DF07222C2A2D2F0400E31060 /* ContentView.swift */,
+				DF0722392A2D755D00E31060 /* Tattoo.swift */,
+				DF07223B2A2D785800E31060 /* TattooViewModel.swift */,
+				DF07222C2A2D2F0400E31060 /* ListView.swift */,
+				DF07223D2A2D7AA200E31060 /* DetailView.swift */,
 				DF07222E2A2D2F0500E31060 /* Assets.xcassets */,
 				DF0722302A2D2F0500E31060 /* Preview Content */,
 			);
@@ -137,8 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF07222D2A2D2F0400E31060 /* ContentView.swift in Sources */,
+				DF07222D2A2D2F0400E31060 /* ListView.swift in Sources */,
+				DF07223A2A2D755D00E31060 /* Tattoo.swift in Sources */,
 				DF07222B2A2D2F0400E31060 /* InkSpotApp.swift in Sources */,
+				DF07223E2A2D7AA200E31060 /* DetailView.swift in Sources */,
+				DF07223C2A2D785800E31060 /* TattooViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +284,8 @@
 				DEVELOPMENT_TEAM = CSDME8QJX3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = InkSpot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,9 +312,8 @@
 				DEVELOPMENT_TEAM = CSDME8QJX3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = InkSpot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
